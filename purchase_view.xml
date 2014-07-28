@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+	<record model="ir.ui.view" id="purchase_deffective_form_view">
+	    <field name="name">purchase.order.form.inherit</field>
+	    <field name="model">purchase.order</field>
+	    <field name="inherit_id" ref="purchase.purchase_order_form"/>
+	    <field name="arch" type="xml">
+	        <data>
+                        <notebook>
+                                <page string="Deffective Products">
+                                   <field name="deffective_ids">
+                                        <tree editable="bottom">
+                                                <field name="product_id" />
+                                                <field name="isbn" />
+                                                <field name="default_code" />
+                                                <field name="qty" />
+                                        </tree>
+                                   </field>
+                                </page>
+                        </notebook>
+                </data>
+            </field>
+        </record>
+
+      
+    </data>
+</openerp>
