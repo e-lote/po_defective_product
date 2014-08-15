@@ -22,7 +22,7 @@
 
 {
     'name': 'Deffective Products in POs',
-    'version': '0.1',
+    'version': '0.1.1',
     'category': 'Tools',
     'complexity': "easy",
     'description': "",
